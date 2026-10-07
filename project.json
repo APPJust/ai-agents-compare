@@ -1,0 +1,2157 @@
+{
+  "schema_version": 1,
+  "is_template": false,
+  "title": "五個 AI 代理人怎麼選？",
+  "content_type": "technical",
+  "learning_goal": "能用「在哪裡執行、能碰什麼、誰來按確認」三個問題，說出 Claude Code、Codex、Antigravity、OpenClaw、Muse 的差異，並為具體任務選出合適的代理人與說明風險。",
+  "audience": "大學／技職學生；知道聊天機器人，未實際使用過 AI 代理人",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "subtitle_languages": [
+    "zh-TW",
+    "en-US"
+  ],
+  "narration_languages": [
+    "zh-TW"
+  ],
+  "deviation_note": "依使用者要求只做中文配音；英文、越南文僅作字幕。技能預設的 en-US 配音版不適用。只交付互動網頁，不輸出 MP4。",
+  "font_assets": [
+    {
+      "family": "Lesson Sans",
+      "url": "fonts/NotoSansTC-VF.ttf",
+      "license": "SIL OFL 1.1"
+    },
+    {
+      "family": "Lesson Serif",
+      "url": "fonts/NotoSerifTC-VF.ttf",
+      "license": "SIL OFL 1.1"
+    },
+    {
+      "family": "Lesson Latin",
+      "url": "fonts/NotoSans-Regular.ttf",
+      "license": "SIL OFL 1.1"
+    },
+    {
+      "family": "Lesson Latin Bold",
+      "url": "fonts/NotoSans-Bold.ttf",
+      "license": "SIL OFL 1.1"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "evidence": "2026-10-07 使用者於對話回覆：「用 Charon，風格和大綱都可以，開始完整製作」（樣片 sample/index.html）"
+  },
+  "voice": {
+    "provider": "gemini",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "Charon",
+    "listening_review": "unverified"
+  },
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Claude Code release notes; Wikipedia: Claude Code",
+      "url": "https://docs.anthropic.com/en/release-notes/claude-code",
+      "checked_at": "2026-10-07"
+    },
+    {
+      "id": "S2",
+      "title": "Wikipedia: OpenAI Codex (AI agent); OpenAI: Introducing Codex",
+      "url": "https://en.wikipedia.org/wiki/OpenAI_Codex_(AI_agent)",
+      "checked_at": "2026-10-07"
+    },
+    {
+      "id": "S3",
+      "title": "Wikipedia: Google Antigravity",
+      "url": "https://en.wikipedia.org/wiki/Google_Antigravity",
+      "checked_at": "2026-10-07"
+    },
+    {
+      "id": "S4",
+      "title": "Wikipedia: OpenClaw; Fortune 2026-02-15",
+      "url": "https://en.wikipedia.org/wiki/OpenClaw",
+      "checked_at": "2026-10-07"
+    },
+    {
+      "id": "S5",
+      "title": "Wikipedia: Muse (AI agent); TechCrunch 2026-09-08; CNN 2026-09-28",
+      "url": "https://en.wikipedia.org/wiki/Muse_(AI_agent)",
+      "checked_at": "2026-10-07"
+    }
+  ],
+  "coverage": {
+    "origin": {
+      "summary": "2025-02-24 Claude Code 研究預覽為這波工具的第一個里程碑；依序為 Codex CLI（2025-04-16）、Codex 雲端（2025-05）、Antigravity（2025-11-18）、OpenClaw 前身（2025-11）、Muse（2026-09-08）。",
+      "date": "2025-02-24",
+      "precision": "day",
+      "event_type": "發布（研究預覽）",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ]
+    },
+    "principle": {
+      "summary": "代理人迴圈：接收目標→思考→呼叫工具→觀察→決定繼續或交人確認；三個旋鈕：執行場域、可觸及範圍、人類把關；限制：模型出錯、提示注入。",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ]
+    },
+    "comparison": {
+      "summary": "五者以相同四個維度比較：在哪裡跑、能碰什麼、誰按確認、適合誰。",
+      "alternatives": [
+        "Claude Code",
+        "Codex",
+        "Antigravity",
+        "OpenClaw",
+        "Muse"
+      ],
+      "dimensions": [
+        "執行場域",
+        "可觸及範圍",
+        "人類把關",
+        "適合對象"
+      ],
+      "conditions": "依官方說明與媒體報導整理之功能定位，非實測效能；版本以 2026-10-07 公開資訊為準。",
+      "time_sensitive": true,
+      "checked_at": "2026-10-07",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ]
+    },
+    "application": {
+      "summary": "示範案例：李老師把「報名表加資料驗證」交給開發代理人（審核後合併），把「截止前提醒學生」交給生活型代理人（送出留給人）；限制：判斷與負責仍在人。",
+      "case_type": "demonstration",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S5"
+      ]
+    },
+    "outlook": {
+      "summary": "已公布：多代理平行、代理人進入日常；研究中：提示注入防禦、代理行為可證明；推測：平台是否允許代理人進入將成競爭關鍵。",
+      "claim_type": "inference",
+      "claim_breakdown": {
+        "announced": [
+          "多代理平行（Antigravity Agent Manager／2.0、Codex 雲端）",
+          "代理人進入日常（Muse、OpenClaw）"
+        ],
+        "research": [
+          "提示注入防禦",
+          "代理行為可證明"
+        ],
+        "inference": [
+          "平台是否讓代理人進門"
+        ]
+      },
+      "as_of": "2026-10-07",
+      "source_ids": [
+        "S3",
+        "S4",
+        "S5"
+      ]
+    }
+  },
+  "duration": 300.0,
+  "beats": {
+    "o1": 1.5,
+    "o1.0": 1.5,
+    "o1.0e": 3.48,
+    "o1.1": 4.02,
+    "o1.1e": 5.9,
+    "o1.2": 6.38,
+    "o1.2e": 8.08,
+    "o1.3": 8.64,
+    "o1.3e": 9.7,
+    "o1.4": 10.44,
+    "o1.4e": 12.5,
+    "o1e": 12.7,
+    "o2": 14.0,
+    "o2.0": 14.0,
+    "o2.0e": 16.76,
+    "o2.1": 16.9,
+    "o2.1e": 19.9,
+    "o2.2": 20.28,
+    "o2.2e": 24.18,
+    "o2e": 24.6,
+    "o3": 25.6,
+    "o3.0": 25.6,
+    "o3.0e": 30.22,
+    "o3.1": 30.84,
+    "o3.1e": 35.26,
+    "o3e": 35.6,
+    "o4": 36.6,
+    "o4.0": 36.87,
+    "o4.0e": 41.78,
+    "o4.1": 42.34,
+    "o4.1e": 44.96,
+    "o4e": 45.36,
+    "o5": 46.3667,
+    "o5.0": 46.367,
+    "o5.0e": 47.707,
+    "o5.1": 48.207,
+    "o5.1e": 50.567,
+    "o5.2": 50.567,
+    "o5.2e": 53.107,
+    "o5.3": 53.607,
+    "o5.3e": 55.135,
+    "o5.4": 56.047,
+    "o5.4e": 59.607,
+    "o5e": 59.967,
+    "o6": 60.9667,
+    "o6.0": 60.967,
+    "o6.0e": 63.487,
+    "o6.1": 63.867,
+    "o6.1e": 65.087,
+    "o6.2": 65.627,
+    "o6.2e": 69.787,
+    "o6e": 70.007,
+    "origin": 0.0,
+    "p1": 73.2,
+    "p1.0": 73.2,
+    "p1.0e": 74.9,
+    "p1.1": 75.4,
+    "p1.1e": 76.96,
+    "p1.2": 77.64,
+    "p1.2e": 81.48,
+    "p1.3": 82.18,
+    "p1.3e": 85.0,
+    "p1:核心": 75.4,
+    "p1:迴圈": 76.72,
+    "p1:接收目標": 77.64,
+    "p1:思考": 79.22,
+    "p1:呼叫": 80.193,
+    "p1:觀察": 82.18,
+    "p1:再決定": 82.96,
+    "p1e": 85.48,
+    "p2": 87.7,
+    "p2.0": 87.7,
+    "p2.0e": 91.44,
+    "p2.1": 92.14,
+    "p2.1e": 95.34,
+    "p2:工具負責做": 89.86,
+    "p2e": 95.7,
+    "p3": 96.8,
+    "p3.0": 96.8,
+    "p3.0e": 98.72,
+    "p3.1": 99.4,
+    "p3.1e": 102.48,
+    "p3.2": 103.26,
+    "p3.2e": 105.34,
+    "p3.3": 106.4,
+    "p3.3e": 108.76,
+    "p3.4": 109.62,
+    "p3.4e": 111.82,
+    "p3.5": 112.66,
+    "p3.5e": 114.6,
+    "p3:你的電腦": 99.4,
+    "p3:雲端": 100.52,
+    "p3:開發環境": 101.44,
+    "p3:程式檔": 106.4,
+    "p3:瀏覽器": 107.04,
+    "p3:信用卡": 108.3,
+    "p3:哪些動作": 112.66,
+    "p3e": 114.96,
+    "p4": 116.6333,
+    "p4.0": 116.633,
+    "p4.0e": 119.013,
+    "p4.1": 119.613,
+    "p4.1e": 122.313,
+    "p4.2": 122.813,
+    "p4.2e": 124.393,
+    "p4.3": 125.073,
+    "p4.3e": 127.993,
+    "p4:假指令": 121.693,
+    "p4e": 128.393,
+    "principle": 71.7,
+    "c1": 131.5667,
+    "c1.0": 131.567,
+    "c1.0e": 133.387,
+    "c1.1": 134.087,
+    "c1.1e": 138.367,
+    "c1e": 138.727,
+    "c2": 139.9333,
+    "c2.0": 139.933,
+    "c2.0e": 143.453,
+    "c2.1": 143.953,
+    "c2.1e": 148.033,
+    "c2.2": 148.893,
+    "c2.2e": 152.073,
+    "c2e": 152.413,
+    "c3": 153.4333,
+    "c3.0": 153.433,
+    "c3.0e": 154.933,
+    "c3.1": 155.353,
+    "c3.1e": 159.033,
+    "c3.2": 159.413,
+    "c3.2e": 162.433,
+    "c3e": 162.753,
+    "c4": 163.9667,
+    "c4.0": 163.967,
+    "c4.0e": 167.267,
+    "c4.1": 167.767,
+    "c4.1e": 172.087,
+    "c4.2": 172.447,
+    "c4.2e": 175.887,
+    "c4e": 176.247,
+    "c5": 177.4667,
+    "c5.0": 177.467,
+    "c5.0e": 181.107,
+    "c5.1": 181.527,
+    "c5.1e": 184.647,
+    "c5.2": 185.367,
+    "c5.2e": 187.887,
+    "c5.3": 188.467,
+    "c5.3e": 191.427,
+    "c5e": 191.827,
+    "c6": 193.0333,
+    "c6.0": 193.033,
+    "c6.0e": 195.873,
+    "c6.1": 195.873,
+    "c6.1e": 200.893,
+    "c6.2": 201.333,
+    "c6.2e": 204.613,
+    "c6.3": 204.613,
+    "c6.3e": 206.653,
+    "c6e": 207.193,
+    "comparison": 129.9,
+    "a1": 210.7667,
+    "a1.0": 210.767,
+    "a1.0e": 212.167,
+    "a1.1": 212.907,
+    "a1.1e": 215.007,
+    "a1.2": 215.547,
+    "a1.2e": 218.227,
+    "a1.3": 218.427,
+    "a1.3e": 220.707,
+    "a1e": 221.047,
+    "a2": 222.2667,
+    "a2.0": 222.267,
+    "a2.0e": 224.507,
+    "a2.1": 225.187,
+    "a2.1e": 228.007,
+    "a2.2": 228.227,
+    "a2.2e": 232.467,
+    "a2:讀專案": 225.187,
+    "a2:改程式": 226.407,
+    "a2:跑測試": 227.547,
+    "a2:交出": 229.007,
+    "a2:審過": 231.187,
+    "a2:合併": 232.127,
+    "a2e": 232.867,
+    "a3": 234.0667,
+    "a3.0": 234.067,
+    "a3.0e": 237.067,
+    "a3.1": 237.927,
+    "a3.1e": 240.447,
+    "a3.2": 241.087,
+    "a3.2e": 243.907,
+    "a3:讀行事曆": 237.927,
+    "a3:草擬": 239.107,
+    "a3:送出": 241.867,
+    "a3:留給人": 243.367,
+    "a3e": 244.347,
+    "a4": 245.6667,
+    "a4.0": 245.667,
+    "a4.0e": 248.207,
+    "a4.1": 248.647,
+    "a4.1e": 252.127,
+    "a4e": 252.507,
+    "application": 209.1,
+    "u1": 255.7,
+    "u1.0": 255.7,
+    "u1.0e": 258.52,
+    "u1.1": 259.38,
+    "u1.1e": 261.9,
+    "u1.2": 262.6,
+    "u1.2e": 266.64,
+    "u1e": 267.02,
+    "u2": 268.2333,
+    "u2.0": 268.233,
+    "u2.0e": 269.553,
+    "u2.1": 270.373,
+    "u2.1e": 272.053,
+    "u2.2": 272.493,
+    "u2.2e": 275.133,
+    "u2e": 275.433,
+    "u3": 276.6333,
+    "u3.0": 276.633,
+    "u3.0e": 277.773,
+    "u3.1": 278.273,
+    "u3.1e": 280.993,
+    "u3.2": 281.573,
+    "u3.2e": 285.193,
+    "u3e": 285.593,
+    "u4": 287.0667,
+    "u4.0": 287.067,
+    "u4.0e": 290.247,
+    "u4.1": 290.947,
+    "u4.1e": 294.607,
+    "u4:在哪裡跑": 290.947,
+    "u4:能碰什麼": 292.167,
+    "u4:誰來按確認": 293.227,
+    "u4e": 294.947,
+    "outlook": 254.2,
+    "credit": 297.0,
+    "comparisonEnd": 209.1
+  },
+  "variants": {
+    "zh-TW": {
+      "mix": "audio/mix.m4a",
+      "scenes": [
+        {
+          "id": "origin",
+          "section": "origin",
+          "start": 0.0,
+          "end": 71.7,
+          "title": "它們從哪裡來？",
+          "screen": "起源時間軸：2025-02-24 Claude Code → 2025-04-16 Codex CLI → 2025-11-18 Antigravity → 2025-11 OpenClaw 前身 → 2026-09-08 Muse",
+          "objective": "知道五個代理人的出現時間與發表者，理解它們從開發者工具擴散到一般人。",
+          "spoken_date": "二〇二五年二月二十四日",
+          "kind": "timeline",
+          "phases": [
+            {
+              "name": "lead",
+              "start": 0.0,
+              "end": 1.5
+            },
+            {
+              "name": "o1",
+              "start": 1.5,
+              "end": 14.0
+            },
+            {
+              "name": "o2",
+              "start": 14.0,
+              "end": 25.6
+            },
+            {
+              "name": "o3",
+              "start": 25.6,
+              "end": 36.6
+            },
+            {
+              "name": "o4",
+              "start": 36.6,
+              "end": 46.3667
+            },
+            {
+              "name": "o5",
+              "start": 46.3667,
+              "end": 60.9667
+            },
+            {
+              "name": "o6",
+              "start": 60.9667,
+              "end": 71.7
+            }
+          ],
+          "qa_times": [
+            2.0,
+            4.52,
+            6.88,
+            9.14,
+            10.94,
+            14.5,
+            17.4,
+            20.78,
+            26.1,
+            31.34,
+            37.37,
+            42.84,
+            46.867,
+            48.707,
+            51.067,
+            54.107,
+            56.547,
+            61.467,
+            64.367,
+            66.127
+          ],
+          "narration": "同樣叫做「AI 代理人」，有的住在工程師的終端機，有的住在你的手機裡。差別到底在哪裡？先看看它們是什麼時候出現的。二〇二五年二月二十四日，Anthropic 推出 Claude Code 研究預覽，讓模型直接在終端機裡讀程式、跑指令。同年四月十六日，OpenAI 開源 Codex CLI；五月，再推出能在雲端同時處理多件工作的 Codex。十一月十八日，Google 隨著 Gemini 3 發表 Antigravity，一個以代理人為主角的開發環境。同樣在十一月，奧地利工程師 Peter Steinberger發布一個開源的個人代理人，後來改名為 OpenClaw，讓人用聊天軟體指揮自己電腦上的代理人。到了二〇二六年九月八日，Meta 推出 Muse，把代理人帶進一般人的信件、行事曆和購物。"
+        },
+        {
+          "id": "principle",
+          "section": "principle",
+          "start": 71.7,
+          "end": 129.9,
+          "title": "五個代理人，同一個迴圈",
+          "screen": "代理人迴圈＋三個旋鈕（身體／手／煞車）＋提示注入",
+          "objective": "說出代理人迴圈四步驟，以及造成差異的三個旋鈕與主要風險。",
+          "kind": "loop",
+          "phases": [
+            {
+              "name": "lead",
+              "start": 71.7,
+              "end": 73.2
+            },
+            {
+              "name": "p1",
+              "start": 73.2,
+              "end": 87.7
+            },
+            {
+              "name": "p2",
+              "start": 87.7,
+              "end": 96.8
+            },
+            {
+              "name": "p3",
+              "start": 96.8,
+              "end": 116.6333
+            },
+            {
+              "name": "p4",
+              "start": 116.6333,
+              "end": 129.9
+            }
+          ],
+          "qa_times": [
+            73.7,
+            75.9,
+            78.14,
+            82.68,
+            88.2,
+            92.64,
+            97.3,
+            99.9,
+            103.76,
+            106.9,
+            110.12,
+            113.16,
+            117.133,
+            120.113,
+            123.313,
+            125.573
+          ],
+          "narration": "不管是哪一個代理人，核心都是同一個迴圈：接收目標、思考下一步、呼叫工具、觀察結果，再決定要不要繼續。語言模型負責想，工具負責做。所以真正讓它們不一樣的，是三個旋鈕。第一，身體在哪裡：你的電腦、雲端，還是開發環境裡。第二，手能碰到什麼：程式檔、瀏覽器，還是你的信用卡。第三，煞車在誰手上：哪些動作必須先問過你。但要記得，模型會出錯，網頁或檔案裡也可能藏著假指令，這叫做提示注入。手伸得越長，煞車就越重要。"
+        },
+        {
+          "id": "comparison",
+          "section": "comparison",
+          "start": 129.9,
+          "end": 209.1,
+          "title": "同一組問題，五種答案",
+          "screen": "五欄四列比較矩陣（非實測，截至 2026-10-07）",
+          "objective": "能用相同維度比較五個代理人的執行場域、可觸及範圍、把關方式與適合對象。",
+          "kind": "matrix",
+          "phases": [
+            {
+              "name": "lead",
+              "start": 129.9,
+              "end": 131.5667
+            },
+            {
+              "name": "c1",
+              "start": 131.5667,
+              "end": 139.9333
+            },
+            {
+              "name": "c2",
+              "start": 139.9333,
+              "end": 153.4333
+            },
+            {
+              "name": "c3",
+              "start": 153.4333,
+              "end": 163.9667
+            },
+            {
+              "name": "c4",
+              "start": 163.9667,
+              "end": 177.4667
+            },
+            {
+              "name": "c5",
+              "start": 177.4667,
+              "end": 193.0333
+            },
+            {
+              "name": "c6",
+              "start": 193.0333,
+              "end": 209.1
+            }
+          ],
+          "qa_times": [
+            132.067,
+            134.587,
+            140.433,
+            144.453,
+            149.393,
+            153.933,
+            155.853,
+            159.913,
+            164.467,
+            168.267,
+            172.947,
+            177.967,
+            182.027,
+            185.867,
+            188.967,
+            193.533,
+            196.373,
+            201.833,
+            205.113
+          ],
+          "narration": "我們用同一組問題來比較。以下依各家官方說明與報導整理，不是實測效能。Claude Code 和 Codex 都以開發者為主：在終端機、IDE 或雲端改程式、跑測試，靠權限模式和沙箱，限制它能做的事。Codex 特別強調，把工作丟到雲端的隔離環境平行處理，做完再交回修改內容讓你審核。Antigravity 本身就是一整個開發環境：代理人同時操作編輯器、終端機和內建瀏覽器，並交出計畫、截圖和錄影給你檢查。OpenClaw 是開源的，裝在你自己的電腦上，用聊天軟體下指令，還能接不同的模型。它的彈性最大，但權限也最廣，第三方技能就曾被發現偷偷外傳資料。Muse 則是給一般人的雲端代理人，跑在 Meta 的虛擬機上，讀取和寫入分開授權。很方便，但也有平台不讓代理人進門，例如 Amazon 已經封鎖它。"
+        },
+        {
+          "id": "application",
+          "section": "application",
+          "start": 209.1,
+          "end": 254.2,
+          "title": "示範：李老師的兩件事",
+          "screen": "兩條工作線：開發代理人（審核後合併）／生活型代理人（送出留給人）",
+          "objective": "能依任務性質選擇代理人，並指出需要人確認的步驟。",
+          "kind": "case",
+          "phases": [
+            {
+              "name": "lead",
+              "start": 209.1,
+              "end": 210.7667
+            },
+            {
+              "name": "a1",
+              "start": 210.7667,
+              "end": 222.2667
+            },
+            {
+              "name": "a2",
+              "start": 222.2667,
+              "end": 234.0667
+            },
+            {
+              "name": "a3",
+              "start": 234.0667,
+              "end": 245.6667
+            },
+            {
+              "name": "a4",
+              "start": 245.6667,
+              "end": 254.2
+            }
+          ],
+          "qa_times": [
+            211.267,
+            213.407,
+            216.047,
+            218.927,
+            222.767,
+            225.687,
+            228.727,
+            234.567,
+            238.427,
+            241.587,
+            246.167,
+            249.147
+          ],
+          "narration": "來看一個示範案例。假設李老師手上有兩件事：替課程報名表加上資料驗證，還有在截止前一天提醒學生。第一件交給開發代理人：它讀專案、改程式、跑測試，最後交出修改內容，老師審過才合併。第二件比較適合生活型代理人：讀行事曆、草擬提醒訊息。但是按下「送出」這一步，應該留給人。結果，重複的工作變快了；可是判斷和負責，仍然在人身上。"
+        },
+        {
+          "id": "outlook",
+          "section": "outlook",
+          "start": 254.2,
+          "end": 297.0,
+          "title": "接下來會怎樣？",
+          "screen": "已公布／研究中／推測 三欄便利貼；結尾三個問題",
+          "objective": "區分已公布趨勢、研究中難題與推測，並帶走三個選擇問題。",
+          "kind": "outlook",
+          "phases": [
+            {
+              "name": "lead",
+              "start": 254.2,
+              "end": 255.7
+            },
+            {
+              "name": "u1",
+              "start": 255.7,
+              "end": 268.2333
+            },
+            {
+              "name": "u2",
+              "start": 268.2333,
+              "end": 276.6333
+            },
+            {
+              "name": "u3",
+              "start": 276.6333,
+              "end": 287.0667
+            },
+            {
+              "name": "u4",
+              "start": 287.0667,
+              "end": 297.0
+            }
+          ],
+          "qa_times": [
+            256.2,
+            259.88,
+            263.1,
+            268.733,
+            270.873,
+            272.993,
+            277.133,
+            278.773,
+            282.073,
+            287.567,
+            291.447
+          ],
+          "narration": "往前看，已經公布的趨勢有兩個：一次指揮多個代理人平行工作，以及代理人走出工程師圈，進入日常生活。還在研究的難題是：怎麼擋住提示注入，以及怎麼證明代理人到底做了什麼。我的推測是，接下來比的不只是模型多聰明，而是網站和平台願不願意讓代理人進門。所以，選代理人之前，先問三個問題：它在哪裡跑？能碰什麼？誰來按確認？"
+        },
+        {
+          "id": "credit",
+          "section": "credit",
+          "start": 297.0,
+          "end": 300.0,
+          "title": "",
+          "screen": "李振偉老師",
+          "narration": "",
+          "phases": [
+            {
+              "name": "署名",
+              "start": 297.0,
+              "end": 300.0
+            }
+          ],
+          "qa_times": [
+            298.5
+          ]
+        }
+      ],
+      "subtitles": {
+        "reviewed": true,
+        "review_note": "2026-10-07 Claude: every chunk boundary taken from faster-whisper word timestamps on the final audio; ASR text compared line-by-line with the approved script (only homophone mis-recognitions, no omissions/additions). Ear-check of sync by a human: pending.",
+        "timing_source": "faster-whisper word timestamps on the final Gemini audio, mapped to the approved script",
+        "cues": [
+          {
+            "start": 1.5,
+            "end": 3.98,
+            "text": [
+              "同樣叫做「AI 代理人」，",
+              "They're all called \"AI agents,\""
+            ],
+            "id": "o1.0"
+          },
+          {
+            "start": 4.02,
+            "end": 6.34,
+            "text": [
+              "有的住在工程師的終端機，",
+              "some live in an engineer's terminal,"
+            ],
+            "id": "o1.1"
+          },
+          {
+            "start": 6.38,
+            "end": 8.6,
+            "text": [
+              "有的住在你的手機裡。",
+              "others live in your phone."
+            ],
+            "id": "o1.2"
+          },
+          {
+            "start": 8.64,
+            "end": 10.4,
+            "text": [
+              "差別到底在哪裡？",
+              "So what's the real difference?"
+            ],
+            "id": "o1.3"
+          },
+          {
+            "start": 10.44,
+            "end": 13.2,
+            "text": [
+              "先看看它們是什麼時候出現的。",
+              "First, let's see when each one appeared."
+            ],
+            "id": "o1.4"
+          },
+          {
+            "start": 14.0,
+            "end": 16.86,
+            "text": [
+              "2025 年 2 月 24 日，",
+              "On February 24, 2025,"
+            ],
+            "id": "o2.0"
+          },
+          {
+            "start": 16.9,
+            "end": 20.24,
+            "text": [
+              "Anthropic 推出 Claude Code 研究預覽，",
+              "Anthropic released a research preview of Claude Code,"
+            ],
+            "id": "o2.1"
+          },
+          {
+            "start": 20.28,
+            "end": 24.88,
+            "text": [
+              "讓模型直接在終端機裡讀程式、跑指令。",
+              "letting the model read code and run commands right in the terminal."
+            ],
+            "id": "o2.2"
+          },
+          {
+            "start": 25.6,
+            "end": 30.8,
+            "text": [
+              "同年 4 月 16 日，OpenAI 開源 Codex CLI；",
+              "On April 16 that year, OpenAI open-sourced Codex CLI;"
+            ],
+            "id": "o3.0"
+          },
+          {
+            "start": 30.84,
+            "end": 35.96,
+            "text": [
+              "5 月，再推出能在雲端同時處理多件工作的 Codex。",
+              "in May, it launched Codex in the cloud, handling many tasks in parallel."
+            ],
+            "id": "o3.1"
+          },
+          {
+            "start": 36.87,
+            "end": 42.3,
+            "text": [
+              "11 月 18 日，Google 隨著 Gemini 3 發表 Antigravity，",
+              "On November 18, Google released Antigravity alongside Gemini 3,"
+            ],
+            "id": "o4.0"
+          },
+          {
+            "start": 42.34,
+            "end": 45.66,
+            "text": [
+              "一個以代理人為主角的開發環境。",
+              "a development environment built around agents."
+            ],
+            "id": "o4.1"
+          },
+          {
+            "start": 46.367,
+            "end": 48.167,
+            "text": [
+              "同樣在 11 月，",
+              "Also in November,"
+            ],
+            "id": "o5.0"
+          },
+          {
+            "start": 48.207,
+            "end": 50.527,
+            "text": [
+              "奧地利工程師 Peter Steinberger",
+              "Austrian engineer Peter Steinberger"
+            ],
+            "id": "o5.1"
+          },
+          {
+            "start": 50.567,
+            "end": 53.567,
+            "text": [
+              "發布一個開源的個人代理人，",
+              "released an open-source personal agent,"
+            ],
+            "id": "o5.2"
+          },
+          {
+            "start": 53.607,
+            "end": 55.835,
+            "text": [
+              "後來改名為 OpenClaw，",
+              "later renamed OpenClaw,"
+            ],
+            "id": "o5.3"
+          },
+          {
+            "start": 56.047,
+            "end": 60.307,
+            "text": [
+              "讓人用聊天軟體指揮自己電腦上的代理人。",
+              "letting people direct an agent on their own computer through chat apps."
+            ],
+            "id": "o5.4"
+          },
+          {
+            "start": 60.967,
+            "end": 63.827,
+            "text": [
+              "到了 2026 年 9 月 8 日，",
+              "Then on September 8, 2026,"
+            ],
+            "id": "o6.0"
+          },
+          {
+            "start": 63.867,
+            "end": 65.587,
+            "text": [
+              "Meta 推出 Muse，",
+              "Meta launched Muse,"
+            ],
+            "id": "o6.1"
+          },
+          {
+            "start": 65.627,
+            "end": 70.487,
+            "text": [
+              "把代理人帶進一般人的信件、行事曆和購物。",
+              "bringing agents into ordinary people's email, calendars and shopping."
+            ],
+            "id": "o6.2"
+          },
+          {
+            "start": 73.2,
+            "end": 75.36,
+            "text": [
+              "不管是哪一個代理人，",
+              "Whichever agent it is,"
+            ],
+            "id": "p1.0"
+          },
+          {
+            "start": 75.4,
+            "end": 77.6,
+            "text": [
+              "核心都是同一個迴圈：",
+              "the core is the same loop:"
+            ],
+            "id": "p1.1"
+          },
+          {
+            "start": 77.64,
+            "end": 82.14,
+            "text": [
+              "接收目標、思考下一步、呼叫工具，",
+              "take a goal, plan the next step, call a tool,"
+            ],
+            "id": "p1.2"
+          },
+          {
+            "start": 82.18,
+            "end": 85.7,
+            "text": [
+              "觀察結果，再決定要不要繼續。",
+              "observe the result, then decide whether to continue."
+            ],
+            "id": "p1.3"
+          },
+          {
+            "start": 87.7,
+            "end": 92.1,
+            "text": [
+              "語言模型負責想，工具負責做。",
+              "The language model thinks; the tools act."
+            ],
+            "id": "p2.0"
+          },
+          {
+            "start": 92.14,
+            "end": 96.04,
+            "text": [
+              "所以真正讓它們不一樣的，是三個旋鈕。",
+              "So what really sets them apart are three dials."
+            ],
+            "id": "p2.1"
+          },
+          {
+            "start": 96.8,
+            "end": 99.36,
+            "text": [
+              "第一，身體在哪裡：",
+              "One: where does its body live?"
+            ],
+            "id": "p3.0"
+          },
+          {
+            "start": 99.4,
+            "end": 103.18,
+            "text": [
+              "你的電腦、雲端，還是開發環境裡。",
+              "Your computer, the cloud, or inside a dev environment."
+            ],
+            "id": "p3.1"
+          },
+          {
+            "start": 103.26,
+            "end": 106.04,
+            "text": [
+              "第二，手能碰到什麼：",
+              "Two: what can its hands reach?"
+            ],
+            "id": "p3.2"
+          },
+          {
+            "start": 106.4,
+            "end": 109.46,
+            "text": [
+              "程式檔、瀏覽器，還是你的信用卡。",
+              "Code files, a browser, or your credit card."
+            ],
+            "id": "p3.3"
+          },
+          {
+            "start": 109.62,
+            "end": 112.52,
+            "text": [
+              "第三，煞車在誰手上：",
+              "Three: who holds the brakes?"
+            ],
+            "id": "p3.4"
+          },
+          {
+            "start": 112.66,
+            "end": 115.3,
+            "text": [
+              "哪些動作必須先問過你。",
+              "Which actions must ask you first."
+            ],
+            "id": "p3.5"
+          },
+          {
+            "start": 116.633,
+            "end": 119.573,
+            "text": [
+              "但要記得，模型會出錯，",
+              "But remember: models make mistakes,"
+            ],
+            "id": "p4.0"
+          },
+          {
+            "start": 119.613,
+            "end": 122.773,
+            "text": [
+              "網頁或檔案裡也可能藏著假指令，",
+              "and web pages or files may hide fake instructions —"
+            ],
+            "id": "p4.1"
+          },
+          {
+            "start": 122.813,
+            "end": 125.033,
+            "text": [
+              "這叫做提示注入。",
+              "that's called prompt injection."
+            ],
+            "id": "p4.2"
+          },
+          {
+            "start": 125.073,
+            "end": 128.693,
+            "text": [
+              "手伸得越長，煞車就越重要。",
+              "The longer the reach, the more the brakes matter."
+            ],
+            "id": "p4.3"
+          },
+          {
+            "start": 131.567,
+            "end": 134.047,
+            "text": [
+              "我們用同一組問題來比較。",
+              "Let's compare them with the same questions."
+            ],
+            "id": "c1.0"
+          },
+          {
+            "start": 134.087,
+            "end": 139.067,
+            "text": [
+              "以下依各家官方說明與報導整理，不是實測效能。",
+              "Based on official descriptions and reports — not benchmark tests."
+            ],
+            "id": "c1.1"
+          },
+          {
+            "start": 139.933,
+            "end": 143.913,
+            "text": [
+              "Claude Code 和 Codex 都以開發者為主：",
+              "Claude Code and Codex mainly serve developers:"
+            ],
+            "id": "c2.0"
+          },
+          {
+            "start": 143.953,
+            "end": 148.733,
+            "text": [
+              "在終端機、IDE 或雲端改程式、跑測試，",
+              "editing code and running tests in the terminal, IDE or cloud,"
+            ],
+            "id": "c2.1"
+          },
+          {
+            "start": 148.893,
+            "end": 152.773,
+            "text": [
+              "靠權限模式和沙箱，限制它能做的事。",
+              "with permission modes and sandboxes limiting what they can do."
+            ],
+            "id": "c2.2"
+          },
+          {
+            "start": 153.433,
+            "end": 155.313,
+            "text": [
+              "Codex 特別強調，",
+              "Codex especially emphasizes"
+            ],
+            "id": "c3.0"
+          },
+          {
+            "start": 155.353,
+            "end": 159.373,
+            "text": [
+              "把工作丟到雲端的隔離環境平行處理，",
+              "sending work to isolated cloud environments to run in parallel,"
+            ],
+            "id": "c3.1"
+          },
+          {
+            "start": 159.413,
+            "end": 163.133,
+            "text": [
+              "做完再交回修改內容讓你審核。",
+              "then handing back the changes for your review."
+            ],
+            "id": "c3.2"
+          },
+          {
+            "start": 163.967,
+            "end": 167.727,
+            "text": [
+              "Antigravity 本身就是一整個開發環境：",
+              "Antigravity is a whole development environment:"
+            ],
+            "id": "c4.0"
+          },
+          {
+            "start": 167.767,
+            "end": 172.407,
+            "text": [
+              "代理人同時操作編輯器、終端機和內建瀏覽器，",
+              "agents work the editor, terminal and built-in browser at once,"
+            ],
+            "id": "c4.1"
+          },
+          {
+            "start": 172.447,
+            "end": 176.587,
+            "text": [
+              "並交出計畫、截圖和錄影給你檢查。",
+              "and hand over plans, screenshots and recordings for you to check."
+            ],
+            "id": "c4.2"
+          },
+          {
+            "start": 177.467,
+            "end": 181.487,
+            "text": [
+              "OpenClaw 是開源的，裝在你自己的電腦上，",
+              "OpenClaw is open source and runs on your own computer;"
+            ],
+            "id": "c5.0"
+          },
+          {
+            "start": 181.527,
+            "end": 185.327,
+            "text": [
+              "用聊天軟體下指令，還能接不同的模型。",
+              "you command it through chat apps, and it can use different models."
+            ],
+            "id": "c5.1"
+          },
+          {
+            "start": 185.367,
+            "end": 188.427,
+            "text": [
+              "它的彈性最大，但權限也最廣，",
+              "It's the most flexible, but also has the broadest permissions;"
+            ],
+            "id": "c5.2"
+          },
+          {
+            "start": 188.467,
+            "end": 192.127,
+            "text": [
+              "第三方技能就曾被發現偷偷外傳資料。",
+              "third-party skills were once found secretly sending data out."
+            ],
+            "id": "c5.3"
+          },
+          {
+            "start": 193.033,
+            "end": 195.833,
+            "text": [
+              "Muse 則是給一般人的雲端代理人，",
+              "Muse is a cloud agent for everyday users,"
+            ],
+            "id": "c6.0"
+          },
+          {
+            "start": 195.873,
+            "end": 201.293,
+            "text": [
+              "跑在 Meta 的虛擬機上，讀取和寫入分開授權。",
+              "running on Meta's virtual machines, with read and write access granted separately."
+            ],
+            "id": "c6.1"
+          },
+          {
+            "start": 201.333,
+            "end": 204.573,
+            "text": [
+              "很方便，但也有平台不讓代理人進門，",
+              "Convenient — but some platforms won't let agents in;"
+            ],
+            "id": "c6.2"
+          },
+          {
+            "start": 204.613,
+            "end": 207.353,
+            "text": [
+              "例如 Amazon 已經封鎖它。",
+              "Amazon, for example, has blocked it."
+            ],
+            "id": "c6.3"
+          },
+          {
+            "start": 210.767,
+            "end": 212.867,
+            "text": [
+              "來看一個示範案例。",
+              "Let's look at a demonstration case."
+            ],
+            "id": "a1.0"
+          },
+          {
+            "start": 212.907,
+            "end": 215.507,
+            "text": [
+              "假設李老師手上有兩件事：",
+              "Suppose Teacher Lee has two tasks:"
+            ],
+            "id": "a1.1"
+          },
+          {
+            "start": 215.547,
+            "end": 218.387,
+            "text": [
+              "替課程報名表加上資料驗證，",
+              "add data validation to the course sign-up form,"
+            ],
+            "id": "a1.2"
+          },
+          {
+            "start": 218.427,
+            "end": 221.407,
+            "text": [
+              "還有在截止前一天提醒學生。",
+              "and remind students the day before the deadline."
+            ],
+            "id": "a1.3"
+          },
+          {
+            "start": 222.267,
+            "end": 225.147,
+            "text": [
+              "第一件交給開發代理人：",
+              "The first goes to a coding agent:"
+            ],
+            "id": "a2.0"
+          },
+          {
+            "start": 225.187,
+            "end": 228.187,
+            "text": [
+              "它讀專案、改程式、跑測試，",
+              "it reads the project, edits code, runs tests,"
+            ],
+            "id": "a2.1"
+          },
+          {
+            "start": 228.227,
+            "end": 233.167,
+            "text": [
+              "最後交出修改內容，老師審過才合併。",
+              "then hands over the changes; the teacher reviews before merging."
+            ],
+            "id": "a2.2"
+          },
+          {
+            "start": 234.067,
+            "end": 237.767,
+            "text": [
+              "第二件比較適合生活型代理人：",
+              "The second suits a personal-life agent:"
+            ],
+            "id": "a3.0"
+          },
+          {
+            "start": 237.927,
+            "end": 241.047,
+            "text": [
+              "讀行事曆、草擬提醒訊息。",
+              "reading the calendar and drafting a reminder."
+            ],
+            "id": "a3.1"
+          },
+          {
+            "start": 241.087,
+            "end": 244.607,
+            "text": [
+              "但是按下「送出」這一步，應該留給人。",
+              "But pressing \"Send\" should be left to a human."
+            ],
+            "id": "a3.2"
+          },
+          {
+            "start": 245.667,
+            "end": 248.607,
+            "text": [
+              "結果，重複的工作變快了；",
+              "The result: repetitive work gets faster;"
+            ],
+            "id": "a4.0"
+          },
+          {
+            "start": 248.647,
+            "end": 252.827,
+            "text": [
+              "可是判斷和負責，仍然在人身上。",
+              "but judgment and responsibility still rest with people."
+            ],
+            "id": "a4.1"
+          },
+          {
+            "start": 255.7,
+            "end": 259.22,
+            "text": [
+              "往前看，已經公布的趨勢有兩個：",
+              "Looking ahead, two trends are already announced:"
+            ],
+            "id": "u1.0"
+          },
+          {
+            "start": 259.38,
+            "end": 262.56,
+            "text": [
+              "一次指揮多個代理人平行工作，",
+              "directing several agents working in parallel,"
+            ],
+            "id": "u1.1"
+          },
+          {
+            "start": 262.6,
+            "end": 267.34,
+            "text": [
+              "以及代理人走出工程師圈，進入日常生活。",
+              "and agents moving beyond engineers into everyday life."
+            ],
+            "id": "u1.2"
+          },
+          {
+            "start": 268.233,
+            "end": 270.253,
+            "text": [
+              "還在研究的難題是：",
+              "Still being researched:"
+            ],
+            "id": "u2.0"
+          },
+          {
+            "start": 270.373,
+            "end": 272.453,
+            "text": [
+              "怎麼擋住提示注入，",
+              "how to stop prompt injection,"
+            ],
+            "id": "u2.1"
+          },
+          {
+            "start": 272.493,
+            "end": 275.833,
+            "text": [
+              "以及怎麼證明代理人到底做了什麼。",
+              "and how to prove what an agent actually did."
+            ],
+            "id": "u2.2"
+          },
+          {
+            "start": 276.633,
+            "end": 278.233,
+            "text": [
+              "我的推測是，",
+              "My guess:"
+            ],
+            "id": "u3.0"
+          },
+          {
+            "start": 278.273,
+            "end": 281.533,
+            "text": [
+              "接下來比的不只是模型多聰明，",
+              "the next contest isn't only about how smart models are,"
+            ],
+            "id": "u3.1"
+          },
+          {
+            "start": 281.573,
+            "end": 285.893,
+            "text": [
+              "而是網站和平台願不願意讓代理人進門。",
+              "but whether websites and platforms let agents in."
+            ],
+            "id": "u3.2"
+          },
+          {
+            "start": 287.067,
+            "end": 290.907,
+            "text": [
+              "所以，選代理人之前，先問三個問題：",
+              "So before choosing an agent, ask three questions:"
+            ],
+            "id": "u4.0"
+          },
+          {
+            "start": 290.947,
+            "end": 295.307,
+            "text": [
+              "它在哪裡跑？能碰什麼？誰來按確認？",
+              "Where does it run? What can it touch? Who presses confirm?"
+            ],
+            "id": "u4.1"
+          }
+        ]
+      }
+    }
+  },
+  "extra_subtitle_tracks": {
+    "zh-vi": {
+      "languages": [
+        "zh-TW",
+        "vi-VN"
+      ],
+      "reviewed": true,
+      "review_note": "2026-10-07 Claude: every chunk boundary taken from faster-whisper word timestamps on the final audio; ASR text compared line-by-line with the approved script (only homophone mis-recognitions, no omissions/additions). Ear-check of sync by a human: pending.",
+      "cues": [
+        {
+          "start": 1.5,
+          "end": 3.98,
+          "text": [
+            "同樣叫做「AI 代理人」，",
+            "Cùng được gọi là \"tác tử AI\","
+          ],
+          "id": "o1.0"
+        },
+        {
+          "start": 4.02,
+          "end": 6.34,
+          "text": [
+            "有的住在工程師的終端機，",
+            "có cái sống trong terminal của kỹ sư,"
+          ],
+          "id": "o1.1"
+        },
+        {
+          "start": 6.38,
+          "end": 8.6,
+          "text": [
+            "有的住在你的手機裡。",
+            "có cái sống trong điện thoại của bạn."
+          ],
+          "id": "o1.2"
+        },
+        {
+          "start": 8.64,
+          "end": 10.4,
+          "text": [
+            "差別到底在哪裡？",
+            "Vậy khác nhau thật sự ở đâu?"
+          ],
+          "id": "o1.3"
+        },
+        {
+          "start": 10.44,
+          "end": 13.2,
+          "text": [
+            "先看看它們是什麼時候出現的。",
+            "Trước hết, hãy xem chúng xuất hiện khi nào."
+          ],
+          "id": "o1.4"
+        },
+        {
+          "start": 14.0,
+          "end": 16.86,
+          "text": [
+            "2025 年 2 月 24 日，",
+            "Ngày 24 tháng 2 năm 2025,"
+          ],
+          "id": "o2.0"
+        },
+        {
+          "start": 16.9,
+          "end": 20.24,
+          "text": [
+            "Anthropic 推出 Claude Code 研究預覽，",
+            "Anthropic ra mắt bản xem trước nghiên cứu của Claude Code,"
+          ],
+          "id": "o2.1"
+        },
+        {
+          "start": 20.28,
+          "end": 24.88,
+          "text": [
+            "讓模型直接在終端機裡讀程式、跑指令。",
+            "cho phép mô hình đọc mã và chạy lệnh ngay trong terminal."
+          ],
+          "id": "o2.2"
+        },
+        {
+          "start": 25.6,
+          "end": 30.8,
+          "text": [
+            "同年 4 月 16 日，OpenAI 開源 Codex CLI；",
+            "Ngày 16 tháng 4 cùng năm, OpenAI công bố mã nguồn mở Codex CLI;"
+          ],
+          "id": "o3.0"
+        },
+        {
+          "start": 30.84,
+          "end": 35.96,
+          "text": [
+            "5 月，再推出能在雲端同時處理多件工作的 Codex。",
+            "tháng 5, ra mắt Codex trên đám mây, xử lý nhiều việc song song."
+          ],
+          "id": "o3.1"
+        },
+        {
+          "start": 36.87,
+          "end": 42.3,
+          "text": [
+            "11 月 18 日，Google 隨著 Gemini 3 發表 Antigravity，",
+            "Ngày 18 tháng 11, Google ra mắt Antigravity cùng với Gemini 3,"
+          ],
+          "id": "o4.0"
+        },
+        {
+          "start": 42.34,
+          "end": 45.66,
+          "text": [
+            "一個以代理人為主角的開發環境。",
+            "một môi trường phát triển lấy tác tử làm trung tâm."
+          ],
+          "id": "o4.1"
+        },
+        {
+          "start": 46.367,
+          "end": 48.167,
+          "text": [
+            "同樣在 11 月，",
+            "Cũng trong tháng 11,"
+          ],
+          "id": "o5.0"
+        },
+        {
+          "start": 48.207,
+          "end": 50.527,
+          "text": [
+            "奧地利工程師 Peter Steinberger",
+            "kỹ sư người Áo Peter Steinberger"
+          ],
+          "id": "o5.1"
+        },
+        {
+          "start": 50.567,
+          "end": 53.567,
+          "text": [
+            "發布一個開源的個人代理人，",
+            "phát hành một tác tử cá nhân mã nguồn mở,"
+          ],
+          "id": "o5.2"
+        },
+        {
+          "start": 53.607,
+          "end": 55.835,
+          "text": [
+            "後來改名為 OpenClaw，",
+            "sau này đổi tên thành OpenClaw,"
+          ],
+          "id": "o5.3"
+        },
+        {
+          "start": 56.047,
+          "end": 60.307,
+          "text": [
+            "讓人用聊天軟體指揮自己電腦上的代理人。",
+            "cho phép điều khiển tác tử trên máy tính của mình qua ứng dụng nhắn tin."
+          ],
+          "id": "o5.4"
+        },
+        {
+          "start": 60.967,
+          "end": 63.827,
+          "text": [
+            "到了 2026 年 9 月 8 日，",
+            "Đến ngày 8 tháng 9 năm 2026,"
+          ],
+          "id": "o6.0"
+        },
+        {
+          "start": 63.867,
+          "end": 65.587,
+          "text": [
+            "Meta 推出 Muse，",
+            "Meta ra mắt Muse,"
+          ],
+          "id": "o6.1"
+        },
+        {
+          "start": 65.627,
+          "end": 70.487,
+          "text": [
+            "把代理人帶進一般人的信件、行事曆和購物。",
+            "đưa tác tử vào email, lịch và mua sắm của người dùng phổ thông."
+          ],
+          "id": "o6.2"
+        },
+        {
+          "start": 73.2,
+          "end": 75.36,
+          "text": [
+            "不管是哪一個代理人，",
+            "Dù là tác tử AI nào đi nữa,"
+          ],
+          "id": "p1.0"
+        },
+        {
+          "start": 75.4,
+          "end": 77.6,
+          "text": [
+            "核心都是同一個迴圈：",
+            "cốt lõi đều là cùng một vòng lặp:"
+          ],
+          "id": "p1.1"
+        },
+        {
+          "start": 77.64,
+          "end": 82.14,
+          "text": [
+            "接收目標、思考下一步、呼叫工具，",
+            "nhận mục tiêu, nghĩ bước tiếp theo, gọi công cụ,"
+          ],
+          "id": "p1.2"
+        },
+        {
+          "start": 82.18,
+          "end": 85.7,
+          "text": [
+            "觀察結果，再決定要不要繼續。",
+            "quan sát kết quả, rồi quyết định có tiếp tục hay không."
+          ],
+          "id": "p1.3"
+        },
+        {
+          "start": 87.7,
+          "end": 92.1,
+          "text": [
+            "語言模型負責想，工具負責做。",
+            "Mô hình ngôn ngữ lo suy nghĩ, công cụ lo hành động."
+          ],
+          "id": "p2.0"
+        },
+        {
+          "start": 92.14,
+          "end": 96.04,
+          "text": [
+            "所以真正讓它們不一樣的，是三個旋鈕。",
+            "Vì vậy, điều thực sự làm chúng khác nhau là ba núm điều chỉnh."
+          ],
+          "id": "p2.1"
+        },
+        {
+          "start": 96.8,
+          "end": 99.36,
+          "text": [
+            "第一，身體在哪裡：",
+            "Thứ nhất: thân thể nó ở đâu?"
+          ],
+          "id": "p3.0"
+        },
+        {
+          "start": 99.4,
+          "end": 103.18,
+          "text": [
+            "你的電腦、雲端，還是開發環境裡。",
+            "Máy tính của bạn, đám mây, hay trong môi trường phát triển."
+          ],
+          "id": "p3.1"
+        },
+        {
+          "start": 103.26,
+          "end": 106.04,
+          "text": [
+            "第二，手能碰到什麼：",
+            "Thứ hai: tay nó chạm tới được gì?"
+          ],
+          "id": "p3.2"
+        },
+        {
+          "start": 106.4,
+          "end": 109.46,
+          "text": [
+            "程式檔、瀏覽器，還是你的信用卡。",
+            "Tệp mã, trình duyệt, hay thẻ tín dụng của bạn."
+          ],
+          "id": "p3.3"
+        },
+        {
+          "start": 109.62,
+          "end": 112.52,
+          "text": [
+            "第三，煞車在誰手上：",
+            "Thứ ba: ai giữ phanh?"
+          ],
+          "id": "p3.4"
+        },
+        {
+          "start": 112.66,
+          "end": 115.3,
+          "text": [
+            "哪些動作必須先問過你。",
+            "Những hành động nào phải hỏi bạn trước."
+          ],
+          "id": "p3.5"
+        },
+        {
+          "start": 116.633,
+          "end": 119.573,
+          "text": [
+            "但要記得，模型會出錯，",
+            "Nhưng hãy nhớ: mô hình có thể sai,"
+          ],
+          "id": "p4.0"
+        },
+        {
+          "start": 119.613,
+          "end": 122.773,
+          "text": [
+            "網頁或檔案裡也可能藏著假指令，",
+            "và trang web hay tệp có thể giấu chỉ thị giả —"
+          ],
+          "id": "p4.1"
+        },
+        {
+          "start": 122.813,
+          "end": 125.033,
+          "text": [
+            "這叫做提示注入。",
+            "đó gọi là tấn công chèn lệnh (prompt injection)."
+          ],
+          "id": "p4.2"
+        },
+        {
+          "start": 125.073,
+          "end": 128.693,
+          "text": [
+            "手伸得越長，煞車就越重要。",
+            "Tay vươn càng xa, phanh càng quan trọng."
+          ],
+          "id": "p4.3"
+        },
+        {
+          "start": 131.567,
+          "end": 134.047,
+          "text": [
+            "我們用同一組問題來比較。",
+            "Hãy so sánh chúng bằng cùng một bộ câu hỏi."
+          ],
+          "id": "c1.0"
+        },
+        {
+          "start": 134.087,
+          "end": 139.067,
+          "text": [
+            "以下依各家官方說明與報導整理，不是實測效能。",
+            "Dựa trên mô tả chính thức và báo chí — không phải kết quả đo thực tế."
+          ],
+          "id": "c1.1"
+        },
+        {
+          "start": 139.933,
+          "end": 143.913,
+          "text": [
+            "Claude Code 和 Codex 都以開發者為主：",
+            "Claude Code và Codex chủ yếu dành cho lập trình viên:"
+          ],
+          "id": "c2.0"
+        },
+        {
+          "start": 143.953,
+          "end": 148.733,
+          "text": [
+            "在終端機、IDE 或雲端改程式、跑測試，",
+            "sửa mã và chạy kiểm thử trong terminal, IDE hoặc đám mây,"
+          ],
+          "id": "c2.1"
+        },
+        {
+          "start": 148.893,
+          "end": 152.773,
+          "text": [
+            "靠權限模式和沙箱，限制它能做的事。",
+            "dùng chế độ phân quyền và sandbox để giới hạn việc chúng làm."
+          ],
+          "id": "c2.2"
+        },
+        {
+          "start": 153.433,
+          "end": 155.313,
+          "text": [
+            "Codex 特別強調，",
+            "Codex đặc biệt nhấn mạnh"
+          ],
+          "id": "c3.0"
+        },
+        {
+          "start": 155.353,
+          "end": 159.373,
+          "text": [
+            "把工作丟到雲端的隔離環境平行處理，",
+            "việc gửi công việc lên môi trường cách ly trên đám mây để xử lý song song,"
+          ],
+          "id": "c3.1"
+        },
+        {
+          "start": 159.413,
+          "end": 163.133,
+          "text": [
+            "做完再交回修改內容讓你審核。",
+            "rồi trả lại các thay đổi để bạn duyệt."
+          ],
+          "id": "c3.2"
+        },
+        {
+          "start": 163.967,
+          "end": 167.727,
+          "text": [
+            "Antigravity 本身就是一整個開發環境：",
+            "Antigravity bản thân là cả một môi trường phát triển:"
+          ],
+          "id": "c4.0"
+        },
+        {
+          "start": 167.767,
+          "end": 172.407,
+          "text": [
+            "代理人同時操作編輯器、終端機和內建瀏覽器，",
+            "tác tử thao tác cùng lúc trình soạn thảo, terminal và trình duyệt tích hợp,"
+          ],
+          "id": "c4.1"
+        },
+        {
+          "start": 172.447,
+          "end": 176.587,
+          "text": [
+            "並交出計畫、截圖和錄影給你檢查。",
+            "và giao lại kế hoạch, ảnh chụp màn hình, bản ghi hình để bạn kiểm tra."
+          ],
+          "id": "c4.2"
+        },
+        {
+          "start": 177.467,
+          "end": 181.487,
+          "text": [
+            "OpenClaw 是開源的，裝在你自己的電腦上，",
+            "OpenClaw là mã nguồn mở, chạy trên máy tính của chính bạn;"
+          ],
+          "id": "c5.0"
+        },
+        {
+          "start": 181.527,
+          "end": 185.327,
+          "text": [
+            "用聊天軟體下指令，還能接不同的模型。",
+            "bạn ra lệnh qua ứng dụng nhắn tin, và nó dùng được nhiều mô hình khác nhau."
+          ],
+          "id": "c5.1"
+        },
+        {
+          "start": 185.367,
+          "end": 188.427,
+          "text": [
+            "它的彈性最大，但權限也最廣，",
+            "Nó linh hoạt nhất, nhưng quyền hạn cũng rộng nhất;"
+          ],
+          "id": "c5.2"
+        },
+        {
+          "start": 188.467,
+          "end": 192.127,
+          "text": [
+            "第三方技能就曾被發現偷偷外傳資料。",
+            "từng phát hiện kỹ năng bên thứ ba lén gửi dữ liệu ra ngoài."
+          ],
+          "id": "c5.3"
+        },
+        {
+          "start": 193.033,
+          "end": 195.833,
+          "text": [
+            "Muse 則是給一般人的雲端代理人，",
+            "Muse là tác tử đám mây dành cho người dùng phổ thông,"
+          ],
+          "id": "c6.0"
+        },
+        {
+          "start": 195.873,
+          "end": 201.293,
+          "text": [
+            "跑在 Meta 的虛擬機上，讀取和寫入分開授權。",
+            "chạy trên máy ảo của Meta, quyền đọc và ghi được cấp riêng."
+          ],
+          "id": "c6.1"
+        },
+        {
+          "start": 201.333,
+          "end": 204.573,
+          "text": [
+            "很方便，但也有平台不讓代理人進門，",
+            "Rất tiện, nhưng có nền tảng không cho tác tử vào;"
+          ],
+          "id": "c6.2"
+        },
+        {
+          "start": 204.613,
+          "end": 207.353,
+          "text": [
+            "例如 Amazon 已經封鎖它。",
+            "ví dụ Amazon đã chặn nó."
+          ],
+          "id": "c6.3"
+        },
+        {
+          "start": 210.767,
+          "end": 212.867,
+          "text": [
+            "來看一個示範案例。",
+            "Hãy xem một ví dụ minh họa."
+          ],
+          "id": "a1.0"
+        },
+        {
+          "start": 212.907,
+          "end": 215.507,
+          "text": [
+            "假設李老師手上有兩件事：",
+            "Giả sử thầy Lý có hai việc:"
+          ],
+          "id": "a1.1"
+        },
+        {
+          "start": 215.547,
+          "end": 218.387,
+          "text": [
+            "替課程報名表加上資料驗證，",
+            "thêm kiểm tra dữ liệu cho biểu mẫu đăng ký khóa học,"
+          ],
+          "id": "a1.2"
+        },
+        {
+          "start": 218.427,
+          "end": 221.407,
+          "text": [
+            "還有在截止前一天提醒學生。",
+            "và nhắc sinh viên một ngày trước hạn chót."
+          ],
+          "id": "a1.3"
+        },
+        {
+          "start": 222.267,
+          "end": 225.147,
+          "text": [
+            "第一件交給開發代理人：",
+            "Việc đầu giao cho tác tử lập trình:"
+          ],
+          "id": "a2.0"
+        },
+        {
+          "start": 225.187,
+          "end": 228.187,
+          "text": [
+            "它讀專案、改程式、跑測試，",
+            "nó đọc dự án, sửa mã, chạy kiểm thử,"
+          ],
+          "id": "a2.1"
+        },
+        {
+          "start": 228.227,
+          "end": 233.167,
+          "text": [
+            "最後交出修改內容，老師審過才合併。",
+            "rồi giao lại thay đổi; thầy duyệt xong mới hợp nhất."
+          ],
+          "id": "a2.2"
+        },
+        {
+          "start": 234.067,
+          "end": 237.767,
+          "text": [
+            "第二件比較適合生活型代理人：",
+            "Việc thứ hai hợp với tác tử đời sống:"
+          ],
+          "id": "a3.0"
+        },
+        {
+          "start": 237.927,
+          "end": 241.047,
+          "text": [
+            "讀行事曆、草擬提醒訊息。",
+            "đọc lịch và soạn tin nhắc nhở."
+          ],
+          "id": "a3.1"
+        },
+        {
+          "start": 241.087,
+          "end": 244.607,
+          "text": [
+            "但是按下「送出」這一步，應該留給人。",
+            "Nhưng bước bấm \"Gửi\" nên để con người làm."
+          ],
+          "id": "a3.2"
+        },
+        {
+          "start": 245.667,
+          "end": 248.607,
+          "text": [
+            "結果，重複的工作變快了；",
+            "Kết quả: việc lặp lại nhanh hơn;"
+          ],
+          "id": "a4.0"
+        },
+        {
+          "start": 248.647,
+          "end": 252.827,
+          "text": [
+            "可是判斷和負責，仍然在人身上。",
+            "nhưng phán đoán và trách nhiệm vẫn thuộc về con người."
+          ],
+          "id": "a4.1"
+        },
+        {
+          "start": 255.7,
+          "end": 259.22,
+          "text": [
+            "往前看，已經公布的趨勢有兩個：",
+            "Nhìn về phía trước, có hai xu hướng đã được công bố:"
+          ],
+          "id": "u1.0"
+        },
+        {
+          "start": 259.38,
+          "end": 262.56,
+          "text": [
+            "一次指揮多個代理人平行工作，",
+            "điều khiển nhiều tác tử làm việc song song,"
+          ],
+          "id": "u1.1"
+        },
+        {
+          "start": 262.6,
+          "end": 267.34,
+          "text": [
+            "以及代理人走出工程師圈，進入日常生活。",
+            "và tác tử bước ra khỏi giới kỹ sư, vào đời sống hằng ngày."
+          ],
+          "id": "u1.2"
+        },
+        {
+          "start": 268.233,
+          "end": 270.253,
+          "text": [
+            "還在研究的難題是：",
+            "Những bài toán còn đang nghiên cứu:"
+          ],
+          "id": "u2.0"
+        },
+        {
+          "start": 270.373,
+          "end": 272.453,
+          "text": [
+            "怎麼擋住提示注入，",
+            "làm sao chặn tấn công chèn lệnh,"
+          ],
+          "id": "u2.1"
+        },
+        {
+          "start": 272.493,
+          "end": 275.833,
+          "text": [
+            "以及怎麼證明代理人到底做了什麼。",
+            "và làm sao chứng minh tác tử thực sự đã làm gì."
+          ],
+          "id": "u2.2"
+        },
+        {
+          "start": 276.633,
+          "end": 278.233,
+          "text": [
+            "我的推測是，",
+            "Phỏng đoán của tôi:"
+          ],
+          "id": "u3.0"
+        },
+        {
+          "start": 278.273,
+          "end": 281.533,
+          "text": [
+            "接下來比的不只是模型多聰明，",
+            "cuộc đua tiếp theo không chỉ là mô hình thông minh đến đâu,"
+          ],
+          "id": "u3.1"
+        },
+        {
+          "start": 281.573,
+          "end": 285.893,
+          "text": [
+            "而是網站和平台願不願意讓代理人進門。",
+            "mà là website và nền tảng có cho tác tử vào hay không."
+          ],
+          "id": "u3.2"
+        },
+        {
+          "start": 287.067,
+          "end": 290.907,
+          "text": [
+            "所以，選代理人之前，先問三個問題：",
+            "Vì vậy, trước khi chọn tác tử, hãy hỏi ba câu:"
+          ],
+          "id": "u4.0"
+        },
+        {
+          "start": 290.947,
+          "end": 295.307,
+          "text": [
+            "它在哪裡跑？能碰什麼？誰來按確認？",
+            "Nó chạy ở đâu? Chạm được vào gì? Ai bấm xác nhận?"
+          ],
+          "id": "u4.1"
+        }
+      ]
+    }
+  }
+}

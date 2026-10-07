@@ -1,0 +1,390 @@
+1
+00:00:01,500 --> 00:00:03,980
+同樣叫做「AI 代理人」，
+They're all called "AI agents,"
+
+2
+00:00:04,020 --> 00:00:06,340
+有的住在工程師的終端機，
+some live in an engineer's terminal,
+
+3
+00:00:06,380 --> 00:00:08,600
+有的住在你的手機裡。
+others live in your phone.
+
+4
+00:00:08,640 --> 00:00:10,400
+差別到底在哪裡？
+So what's the real difference?
+
+5
+00:00:10,440 --> 00:00:13,200
+先看看它們是什麼時候出現的。
+First, let's see when each one appeared.
+
+6
+00:00:14,000 --> 00:00:16,860
+2025 年 2 月 24 日，
+On February 24, 2025,
+
+7
+00:00:16,900 --> 00:00:20,240
+Anthropic 推出 Claude Code 研究預覽，
+Anthropic released a research preview of Claude Code,
+
+8
+00:00:20,280 --> 00:00:24,880
+讓模型直接在終端機裡讀程式、跑指令。
+letting the model read code and run commands right in the terminal.
+
+9
+00:00:25,600 --> 00:00:30,800
+同年 4 月 16 日，OpenAI 開源 Codex CLI；
+On April 16 that year, OpenAI open-sourced Codex CLI;
+
+10
+00:00:30,840 --> 00:00:35,960
+5 月，再推出能在雲端同時處理多件工作的 Codex。
+in May, it launched Codex in the cloud, handling many tasks in parallel.
+
+11
+00:00:36,870 --> 00:00:42,300
+11 月 18 日，Google 隨著 Gemini 3 發表 Antigravity，
+On November 18, Google released Antigravity alongside Gemini 3,
+
+12
+00:00:42,340 --> 00:00:45,660
+一個以代理人為主角的開發環境。
+a development environment built around agents.
+
+13
+00:00:46,367 --> 00:00:48,167
+同樣在 11 月，
+Also in November,
+
+14
+00:00:48,207 --> 00:00:50,527
+奧地利工程師 Peter Steinberger
+Austrian engineer Peter Steinberger
+
+15
+00:00:50,567 --> 00:00:53,567
+發布一個開源的個人代理人，
+released an open-source personal agent,
+
+16
+00:00:53,607 --> 00:00:55,835
+後來改名為 OpenClaw，
+later renamed OpenClaw,
+
+17
+00:00:56,047 --> 00:01:00,307
+讓人用聊天軟體指揮自己電腦上的代理人。
+letting people direct an agent on their own computer through chat apps.
+
+18
+00:01:00,967 --> 00:01:03,827
+到了 2026 年 9 月 8 日，
+Then on September 8, 2026,
+
+19
+00:01:03,867 --> 00:01:05,587
+Meta 推出 Muse，
+Meta launched Muse,
+
+20
+00:01:05,627 --> 00:01:10,487
+把代理人帶進一般人的信件、行事曆和購物。
+bringing agents into ordinary people's email, calendars and shopping.
+
+21
+00:01:13,200 --> 00:01:15,360
+不管是哪一個代理人，
+Whichever agent it is,
+
+22
+00:01:15,400 --> 00:01:17,600
+核心都是同一個迴圈：
+the core is the same loop:
+
+23
+00:01:17,640 --> 00:01:22,140
+接收目標、思考下一步、呼叫工具，
+take a goal, plan the next step, call a tool,
+
+24
+00:01:22,180 --> 00:01:25,700
+觀察結果，再決定要不要繼續。
+observe the result, then decide whether to continue.
+
+25
+00:01:27,700 --> 00:01:32,100
+語言模型負責想，工具負責做。
+The language model thinks; the tools act.
+
+26
+00:01:32,140 --> 00:01:36,040
+所以真正讓它們不一樣的，是三個旋鈕。
+So what really sets them apart are three dials.
+
+27
+00:01:36,800 --> 00:01:39,360
+第一，身體在哪裡：
+One: where does its body live?
+
+28
+00:01:39,400 --> 00:01:43,180
+你的電腦、雲端，還是開發環境裡。
+Your computer, the cloud, or inside a dev environment.
+
+29
+00:01:43,260 --> 00:01:46,040
+第二，手能碰到什麼：
+Two: what can its hands reach?
+
+30
+00:01:46,400 --> 00:01:49,460
+程式檔、瀏覽器，還是你的信用卡。
+Code files, a browser, or your credit card.
+
+31
+00:01:49,620 --> 00:01:52,520
+第三，煞車在誰手上：
+Three: who holds the brakes?
+
+32
+00:01:52,660 --> 00:01:55,300
+哪些動作必須先問過你。
+Which actions must ask you first.
+
+33
+00:01:56,633 --> 00:01:59,573
+但要記得，模型會出錯，
+But remember: models make mistakes,
+
+34
+00:01:59,613 --> 00:02:02,773
+網頁或檔案裡也可能藏著假指令，
+and web pages or files may hide fake instructions —
+
+35
+00:02:02,813 --> 00:02:05,033
+這叫做提示注入。
+that's called prompt injection.
+
+36
+00:02:05,073 --> 00:02:08,693
+手伸得越長，煞車就越重要。
+The longer the reach, the more the brakes matter.
+
+37
+00:02:11,567 --> 00:02:14,047
+我們用同一組問題來比較。
+Let's compare them with the same questions.
+
+38
+00:02:14,087 --> 00:02:19,067
+以下依各家官方說明與報導整理，不是實測效能。
+Based on official descriptions and reports — not benchmark tests.
+
+39
+00:02:19,933 --> 00:02:23,913
+Claude Code 和 Codex 都以開發者為主：
+Claude Code and Codex mainly serve developers:
+
+40
+00:02:23,953 --> 00:02:28,733
+在終端機、IDE 或雲端改程式、跑測試，
+editing code and running tests in the terminal, IDE or cloud,
+
+41
+00:02:28,893 --> 00:02:32,773
+靠權限模式和沙箱，限制它能做的事。
+with permission modes and sandboxes limiting what they can do.
+
+42
+00:02:33,433 --> 00:02:35,313
+Codex 特別強調，
+Codex especially emphasizes
+
+43
+00:02:35,353 --> 00:02:39,373
+把工作丟到雲端的隔離環境平行處理，
+sending work to isolated cloud environments to run in parallel,
+
+44
+00:02:39,413 --> 00:02:43,133
+做完再交回修改內容讓你審核。
+then handing back the changes for your review.
+
+45
+00:02:43,967 --> 00:02:47,727
+Antigravity 本身就是一整個開發環境：
+Antigravity is a whole development environment:
+
+46
+00:02:47,767 --> 00:02:52,407
+代理人同時操作編輯器、終端機和內建瀏覽器，
+agents work the editor, terminal and built-in browser at once,
+
+47
+00:02:52,447 --> 00:02:56,587
+並交出計畫、截圖和錄影給你檢查。
+and hand over plans, screenshots and recordings for you to check.
+
+48
+00:02:57,467 --> 00:03:01,487
+OpenClaw 是開源的，裝在你自己的電腦上，
+OpenClaw is open source and runs on your own computer;
+
+49
+00:03:01,527 --> 00:03:05,327
+用聊天軟體下指令，還能接不同的模型。
+you command it through chat apps, and it can use different models.
+
+50
+00:03:05,367 --> 00:03:08,427
+它的彈性最大，但權限也最廣，
+It's the most flexible, but also has the broadest permissions;
+
+51
+00:03:08,467 --> 00:03:12,127
+第三方技能就曾被發現偷偷外傳資料。
+third-party skills were once found secretly sending data out.
+
+52
+00:03:13,033 --> 00:03:15,833
+Muse 則是給一般人的雲端代理人，
+Muse is a cloud agent for everyday users,
+
+53
+00:03:15,873 --> 00:03:21,293
+跑在 Meta 的虛擬機上，讀取和寫入分開授權。
+running on Meta's virtual machines, with read and write access granted separately.
+
+54
+00:03:21,333 --> 00:03:24,573
+很方便，但也有平台不讓代理人進門，
+Convenient — but some platforms won't let agents in;
+
+55
+00:03:24,613 --> 00:03:27,353
+例如 Amazon 已經封鎖它。
+Amazon, for example, has blocked it.
+
+56
+00:03:30,767 --> 00:03:32,867
+來看一個示範案例。
+Let's look at a demonstration case.
+
+57
+00:03:32,907 --> 00:03:35,507
+假設李老師手上有兩件事：
+Suppose Teacher Lee has two tasks:
+
+58
+00:03:35,547 --> 00:03:38,387
+替課程報名表加上資料驗證，
+add data validation to the course sign-up form,
+
+59
+00:03:38,427 --> 00:03:41,407
+還有在截止前一天提醒學生。
+and remind students the day before the deadline.
+
+60
+00:03:42,267 --> 00:03:45,147
+第一件交給開發代理人：
+The first goes to a coding agent:
+
+61
+00:03:45,187 --> 00:03:48,187
+它讀專案、改程式、跑測試，
+it reads the project, edits code, runs tests,
+
+62
+00:03:48,227 --> 00:03:53,167
+最後交出修改內容，老師審過才合併。
+then hands over the changes; the teacher reviews before merging.
+
+63
+00:03:54,067 --> 00:03:57,767
+第二件比較適合生活型代理人：
+The second suits a personal-life agent:
+
+64
+00:03:57,927 --> 00:04:01,047
+讀行事曆、草擬提醒訊息。
+reading the calendar and drafting a reminder.
+
+65
+00:04:01,087 --> 00:04:04,607
+但是按下「送出」這一步，應該留給人。
+But pressing "Send" should be left to a human.
+
+66
+00:04:05,667 --> 00:04:08,607
+結果，重複的工作變快了；
+The result: repetitive work gets faster;
+
+67
+00:04:08,647 --> 00:04:12,827
+可是判斷和負責，仍然在人身上。
+but judgment and responsibility still rest with people.
+
+68
+00:04:15,700 --> 00:04:19,220
+往前看，已經公布的趨勢有兩個：
+Looking ahead, two trends are already announced:
+
+69
+00:04:19,380 --> 00:04:22,560
+一次指揮多個代理人平行工作，
+directing several agents working in parallel,
+
+70
+00:04:22,600 --> 00:04:27,340
+以及代理人走出工程師圈，進入日常生活。
+and agents moving beyond engineers into everyday life.
+
+71
+00:04:28,233 --> 00:04:30,253
+還在研究的難題是：
+Still being researched:
+
+72
+00:04:30,373 --> 00:04:32,453
+怎麼擋住提示注入，
+how to stop prompt injection,
+
+73
+00:04:32,493 --> 00:04:35,833
+以及怎麼證明代理人到底做了什麼。
+and how to prove what an agent actually did.
+
+74
+00:04:36,633 --> 00:04:38,233
+我的推測是，
+My guess:
+
+75
+00:04:38,273 --> 00:04:41,533
+接下來比的不只是模型多聰明，
+the next contest isn't only about how smart models are,
+
+76
+00:04:41,573 --> 00:04:45,893
+而是網站和平台願不願意讓代理人進門。
+but whether websites and platforms let agents in.
+
+77
+00:04:47,067 --> 00:04:50,907
+所以，選代理人之前，先問三個問題：
+So before choosing an agent, ask three questions:
+
+78
+00:04:50,947 --> 00:04:55,307
+它在哪裡跑？能碰什麼？誰來按確認？
+Where does it run? What can it touch? Who presses confirm?
+
